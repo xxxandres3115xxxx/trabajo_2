@@ -1,46 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rafael Nadal Biography</title>
-        <Style>
-            #enlaces {
-                color: crimson;
-                text-decoration: none;
-            }
-        </style>
-    </head>
-    
-    <body style="margin: 0%; background-color: brown;">
-        <header style="background-color: black; word-spacing: 2em;">
-            <img src="" width=" 100%" height="300px">
-            <nav style="text-align:center; background-color: ghostwhite; ">
-                <span style="font-size: 24 px; padding:12 px;">
-                    <a id="enlaces" href="#">Inicio</a>
-                    <a id="enlaces" href="/gallery.html">Galeria</a>
-                    <a id="enlaces" href="/contact.html">Contacto</a>
-                    <a id="enlaces" href="/aboutme.html">Sobre_mi</a>
-                </span>
-            </nav>
-        </header>
-        <main style="background-color: gold;">
-            <section style="padding: 20px; font-size: 20px; background-color: blue;">
-                <p>
-                    
-                </p>
-            </section>
-            <section style="text-align: center; background-color: grey;">
-                <img src="" width="30%">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non atque sint exercitationem aperiam nam
-                    suscipit voluptatibus? Eum, accusamus non? Perspiciatis?</p>
-            </section>
-        </main>
-        <footer style="text-align: center; background-color: indianred;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <Style>
+        #enlaces {
+            color: rgb(1, 90, 20);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="margin: 0%; background-color: white;">
+    <header style="background-color: rgba(155, 78, 6, 0.644);">
+        <table width="100%" cellpadding="2">
+            <tr>
+                <img src="contact.png" width="100%" height="400px" />
+            </tr>
+        </table>
+        <nav style="text-align:center; background-color: rgb(182, 132, 85); word-spacing: 2em; ">
+            <span style="font-size: 22px; padding:12px;">
+                <a id="enlaces" href="home.html">Inicio</a>
+                <a id="enlaces" href="gallery.html">Galeria</a>
+                <a id="enlaces" href="contact.html ">Contacto</a>
+                <a id="enlaces" href="aboutme.html">Sobre_mi</a>
+            </span>
+        </nav>
+    </header>
+    <main style="background-color: white;">
+        <section style="text-align: center; padding: 80px; font-size: 20px; background-color: rgb(182, 132, 85);">
             <p>
-                
+            <h1 style="color:rgb(1, 90, 20);">Enviamos tus datos y te leemos</h1>
             </p>
-        </footer>
-    </body>
+            <form action="formSucess.html" method="POST">
+                <table style="text-align:center; " width="100%" cellpadding="4">
+                    <tr>
+                        <td>
+                            <label for="username">Nombre Completo:</label>
+                        </td>
+
+                        <td>
+                            <input type="text" name="username" id="username"><br>
+                        </td>
+
+                        <td>
+                            <label for="age">Edad:</label>
+                        </td>
+
+                        <td>
+                            <input type="number" name="age" id="age" step="5"><br>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="phone">Celular:</label>
+                        </td>
+
+                        <td>
+                            <input type="number" name="phone" id="phone"><br>
+                        </td>
+
+                        <td>
+                            <label for="Genero">Genero:</label><br>
+                        </td>
+
+                        <td>
+                            <select name="genre" id="Genero">
+                                <option value="none"></option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="No deseo responder">No deseo responder</option>
+
+                            </select><br>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="Ciudad">Selecciona tu Ciudad: </label><br>
+                        </td>
+
+                        <td>
+
+                            <input type="text" list="barrios">
+                            <datalist id="barrios">
+                                <option value="Cali"></option>
+                                <option value="Bogota"></option>
+                                <option value="Santa Marta"></option>
+                                <option value="Barranquilla"></option>
+                                <option value="Bucaramanga"></option>
+                                <option value="Medellin"></option>
+                                <option value="Villavicencio"></option>
+                                <option value="Manizales"></option>
+                                <option value="Pereira"></option>
+                                <option value="Monteria"></option>
+                            </datalist><br>
+                        </td>
+
+                        <td>
+                            <label for="Dirección">Dirección: </label><br>
+                        </td>
+
+                        <td>
+                            <input type="text" name="Dirección" id="Dirección"><br>
+                        </td>
+
+                    </tr>
+                    <br>
+                    <br>
+                    <tr>
+                        <td>
+                            <label for="Juegas"> ¿Juegas tenis?:</label>
+                        </td>
+
+                        <td>
+                            <label for="Si">SI</label>
+                            <input type="checkbox" name="SI" id="SI">
+                            <label for="NO">NO</label>
+                            <input type="checkbox" name="NO" id="NO"><br>
+                        </td>
+
+                        <td>
+                            <label for="Jugador"> ¿Cuál es tu jugador favorito? :</label>
+                        </td>
+
+                        <td>
+                            <input type="text" list="Jugadores">
+                            <datalist id="Jugadores">
+                                <option value="Novak Djokovic"></option>
+                                <option value="Daniil Medvedev"></option>
+                                <option value="Alexander Zverev"></option>
+                                <option value="Stefanos Tsitsipas"></option>
+                                <option value="Rafael Nadal"></option>
+                                <option value="Matteo Berrettini"></option>
+                                <option value="Andrey Rublev"></option>
+                                <option value="Roger Federer"></option>
+                                <option value="Gael Monfils"></option>
+                                <option value="Grigor Dimitrov"></option>
+                            </datalist><br>
+                        </td>
+
+                    </tr>
+                    <br>
+                    <br>
+
+                    <table style="text-align:center; padding: 0px 280px 0px 280px; ;" width="100%" cellpadding="2">
+                        <tr>
+                            <td>
+                                <label for="Email"> Correo Electronico:</label><br><br><br>
+                            </td>
+                            <td>
+                                <input type="email" name="Email" id="Email"><br><br><br>
+                            </td>
+
+                            <br>
+                            <br>
+                        </tr>
+
+                        <table style="text-align:center; " width="100%" cellpadding="1"></table>
+                        <tr>
+                            <td>
+                                <label for="comments">Dejanos tus comentarios </label><br><br>
+                            </td>
+                            <td>
+                                <textarea name="comments" id="comments" cols="40" rows="15"></textarea><br>
+                            </td>
+                        </tr>
+                    </table>
+                            
+                            <input type="submit" value="Enviar"><br>
+
+
+
+
+
+
+            </form>
+            <footer style="text-align: center; background-color: indianred;">
+                <p>
+
+                </p>
+            </footer>
+</body>
+
 </html>
